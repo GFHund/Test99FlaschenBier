@@ -1,0 +1,10 @@
+
+char* parsFile()
+{
+	
+}
+
+int main()
+{
+	
+}
