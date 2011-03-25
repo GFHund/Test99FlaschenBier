@@ -1,3 +1,4 @@
+#include "calcAreas.h"
 
 /*
 - calcCircleArea(...)
@@ -10,7 +11,7 @@ float calcCircleArea(float r)
 	return r*r*PI;
 }
 
-float calcCircleArea(float width,float height)
+float calcRectArea(float width,float height)
 {
 	return width*height;
 }
