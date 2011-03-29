@@ -1,12 +1,11 @@
 
 CC = gcc
-DEFAULT_LIB_INSTALL_PATH = /home/tux/Programmieren/st3/Test99FlaschenBier/
-#libcalc.so
+DEFAULT_LIB_INSTALL_PATH = /home/tux/Programmieren/st3/Test99FlaschenBier/libcalc.so
 
 studienleistung: calc logconsole logfile
 	#$(CC) -o $@ main.c libcalc.so -ldl 
-	#$(CC) -o $@ main.c -L$(DEFAULT_LIB_INSTALL_PATH) -R$(DEFAULT_LIB_INSTALL_PATH) -ldl
-	$(CC) -o $@ main.c -lcalc -ldl
+	$(CC) -o $@ main.c -L$(DEFAULT_LIB_INSTALL_PATH) -R$(DEFAULT_LIB_INSTALL_PATH) -ldl
+	#$(CC) -o $@ main.c -lcalc -ldl
 
 calc:
 	$(CC) -shared -fpic -o libcalc.so calcAreas.h calcAreas.c calcNewton.h calcNewton.c

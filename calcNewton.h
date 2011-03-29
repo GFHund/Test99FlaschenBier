@@ -1,1 +1,1 @@
-void calcNewton();
+float calcNewton(float x1,float x2,int intervals);

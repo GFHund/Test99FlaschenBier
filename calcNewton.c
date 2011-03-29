@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+#include "calcNewton.h"
 
 float f(float x)
 {
